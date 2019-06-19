@@ -37,11 +37,11 @@ else
     echo "LogLevel DEBUG" >> /etc/ssh/sshd_config
 fi
 
-/etc/init.d/ssh restart
-if [ $? -eq 0 ]; then
-    lava-test-case sshd-restart --result pass
-    echo "sshd re-started"
-else
-    lava-test-case sshd-restart --result fail
-    echo "sshd re-start failed"
-fi
+#/etc/init.d/ssh restart
+#if [ $? -eq 0 ]; then
+#    lava-test-case sshd-restart --result pass
+#    echo "sshd re-started"
+#else
+#    lava-test-case sshd-restart --result fail
+#   echo "sshd re-start failed"
+#fi
