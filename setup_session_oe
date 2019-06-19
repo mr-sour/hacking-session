@@ -30,12 +30,12 @@ if [ ! -z "${SUDO_USER}" -a -z "${container}" ]; then
 fi
 
 # Change SSHD log level to DEBUG
-grep -P "^LogLevel" /etc/ssh/sshd_config
-if [ $? -eq 0 ]; then
-    sed -i "s/^LogLevel\ [A-Z]\+/LogLevel\ DEBUG/g" /etc/ssh/sshd_config
-else
-    echo "LogLevel DEBUG" >> /etc/ssh/sshd_config
-fi
+#grep -P "^LogLevel" /etc/ssh/sshd_config
+#if [ $? -eq 0 ]; then
+#    sed -i "s/^LogLevel\ [A-Z]\+/LogLevel\ DEBUG/g" /etc/ssh/sshd_config
+#else
+#    echo "LogLevel DEBUG" >> /etc/ssh/sshd_config
+#fi
 
 #/etc/init.d/ssh restart
 #if [ $? -eq 0 ]; then
