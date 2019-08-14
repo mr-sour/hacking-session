@@ -13,8 +13,8 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 
-mkdir -p ~/.ssh/
-echo $1 >> ~/.ssh/authorized_keys
+mkdir -p /var/lib/dropbear
+echo $1 >> /var/lib/dropbear
 if [ $? -ne 0 ]; then
     lava-test-case public-key-installed --result fail
 fi
