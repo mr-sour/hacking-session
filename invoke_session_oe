@@ -52,8 +52,7 @@ STARTED=false
 TERMINATED=false
 echo "Hacking session active..."
 lava-test-case hacking-session-active --result pass
-tail -f /var/log/syslog &
-echo $! > /run/hacking/tail.pid
+
 while [ -f /run/hacking/hacking.pid ]
 do
     date
