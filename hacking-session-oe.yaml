@@ -1,6 +1,6 @@
 metadata:
   name: hacking-session-oe
-  format: "Lava-Test Test Definition 1.0"
+  format: "Lava-Test-Shell Test Definition 1.0"
   description: "SSH Hacking Session"
   version: 1.0
 
